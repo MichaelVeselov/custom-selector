@@ -28,27 +28,18 @@ class CustomSelect {
 
   #createBlockWrapper() {
     const blockWrapper = document.createElement('div');
-    blockWrapper.classList.add(
-      'select-dropdown',
-      `select-dropdown--${this.#id}`
-    );
+    blockWrapper.classList.add('select-dropdown', `select-dropdown--${this.#id}`);
 
     return blockWrapper;
   }
 
   #createSelectButton() {
     const selectButton = document.createElement('button');
-    selectButton.classList.add(
-      'select-dropdown__button',
-      `select-dropdown__button--${this.#id}`
-    );
+    selectButton.classList.add('select-dropdown__button', `select-dropdown__button--${this.#id}`);
 
     const span = document.createElement('span');
-    span.classList.add(
-      'select-dropdown__text',
-      `select-dropdown__text--${this.#id}`
-    );
-    span.textContent = this.#currentSelectedOption?.text || 'Выберите элемент';
+    span.classList.add('select-dropdown__text', `select-dropdown__text--${this.#id}`);
+    span.textContent = this.#currentSelectedOption?.text || 'Choose one element';
 
     selectButton.appendChild(span);
 
@@ -57,10 +48,7 @@ class CustomSelect {
 
   #createListWrapper() {
     const listWrapper = document.createElement('ul');
-    listWrapper.classList.add(
-      'select-dropdown__list',
-      `select-dropdown__list--${this.#id}`
-    );
+    listWrapper.classList.add('select-dropdown__list', `select-dropdown__list--${this.#id}`);
 
     return listWrapper;
   }
@@ -98,8 +86,7 @@ class CustomSelect {
 }
 
 function setValue() {
-  document.querySelector('.select-dropdown__text').textContent =
-    dropDownBlock.selectedValue.text;
+  document.querySelector('.select-dropdown__text').textContent = dropDownBlock.selectedValue.text;
 }
 
 function addSelectedToItem(item) {
