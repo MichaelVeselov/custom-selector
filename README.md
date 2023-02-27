@@ -4,4 +4,4 @@
 
 ### App Select Dropdown List
 
-![Donate](screenshot/custom-selector.png 'Select Dropdown List')
+![Select Dropdown List](screenshot/custom-selector.png 'Select Dropdown List')
